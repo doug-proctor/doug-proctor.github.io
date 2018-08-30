@@ -3,15 +3,15 @@
 
 @import "bootstrap/scss/functions";
 
-$font-size-base: 1.1rem;
+$font-size-base: 1.35rem;
 
 $body-color: #444;
 
 $container-max-widths: (
-  sm: 540px,
-  md: 670px,
-  lg: 870px,
-  xl: 900px
+  sm: 800px,
+  md: 900px,
+  lg: 1100px,
+  xl: 1360px
 ) !default;
 
 $h1-font-size:                $font-size-base * 3 !default;
@@ -29,106 +29,243 @@ $headings-margin-bottom:      ($spacer / 1.2) !default;
 
 @import "site";
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.mt-6 {
+    margin-top: 4.6rem;
+}
+.mb-6 {
+    margin-bottom: 4.6rem;
+}
 
 $red: #ff3d54;
+$machine: #E9EDEF;
+$grey: #F4F6F7;
+
+a {
+    color: $red;
+    &:hover {
+        color: darken($red, 20%);
+    }
+}
 
 body {
-    font-family: 'Open Sans', 'Roboto';
+    background: $machine;
+    font-family: georgia;
 }
 
-h1,
-h2 {
-    margin-top: 1em;
+.header {
+    font-family: 'Oswald';
+    font-size: 2rem;
+    padding: 20px;
+    a {
+        color: $red;
+    }
 }
 
-h1 {
+.page {
+    background: #FFF;
+}
+
+section {
+    padding: 5em 0;
+    //border: 1px dashed blue;
+
+    &.grey {
+        background: $grey;
+    }
+
+    &.centered {
+        text-align: center;
+    }
+}
+
+blockquote {
+    color: $red;
+    border-left: 8px solid $red;
+    padding-left: 1rem;
+    @extend .mb-5;
+    @extend .mt-5;
+}
+
+@include media-breakpoint-up(sm) {
+    blockquote {
+        font-size: 1.2em;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    blockquote {
+        font-size: 1.2em;
+        margin-left: -2em;
+    }
+}
+
+
+.readable {
+    max-width: 610px;
+    margin: 0 auto;
+}
+
+p {
+    margin-bottom: 1.2em;
+}
+
+.superheading {
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    color: #bcbcbb;
+    font-size: 1em;
     //margin-bottom: 1em;
 }
 
-p.lead {
-    font-size: 1.6em;
-    max-width: 800px;
-    margin: 1em 0;
-    color: $red;
+h2 {
+    margin-bottom: 0.8em;
+    font-size: 2.3em;
+    font-family: Oswald;
+    ffont-weight: bold;
 }
 
-.masthead {
-
-    background: url('/assets/img/iproov/masthead.png');
-    background-position: right;
-    background-size: cover;
-    margin-bottom: 60px;
-    position: relative;
-    min-height: 60vh;
-
-    .box {
-        max-width: 800px;
-        position: absolute;
-        bottom: 0;
-    }
-
-    h1 {
-        color: $red;
-        font-size: 3em;
-    }
-
-    p {
-        font-size: 1.4em;
-    }
+h3 {
+    font-family: Oswald;
 }
 
-
-.header {
-    padding: 20px;
-    margin-bottom: 50px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 2;
-}
-
-.pull-quote {
-
-    color: $red;
-    padding: 40px;
-    margin: 40px 0;
-    font-size: 1.4em;
-    background: #F6F6F6;
-
-    span {
-        max-width: 600px;
-        display: inline-block;
-    }
+.disclaimer {
+    color: #aaa;
 }
 
 .image-row {
-    padding: 2em;
-    background-color: #333;
-    background-color: #FFF;
+    padding: 0 7rem;
+    @extend .mt-6;
+    @extend .mb-6;
 }
 
-.image-row.small {
-    margin: 0 200px;
+figcaption {
+    text-align: center;
+    padding-top: 2rem;
 }
 
-.image {
-    width: 100%;
-    min-height: 300px;
+
+
+
+
+
+
+.masthead {
+
+    background-image: url('/assets/img/iproov/masthead.png');
+    background-color: $red;
     background-size: cover;
-    //box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-    border: 1px solid #aaa;
-    border-radius: 2px;
-    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+
+    padding: 20px;
+
+    .box {
+        font-family: georgia, serif;
+        text-align: center;
+        color: #FFF;
+    }
+
+    h1 {
+        margin: 1.8rem 0;
+        font-size: 3.4rem;
+        font-family: 'Oswald';
+    }
+
+    p {
+        font-size: 1.3rem;
+        margin: 1.6rem 0;
+    }
 }
 
-.done {
-    // text-align: center;
-    font-size: 100px;
+@include media-breakpoint-up(xs) {
+    .masthead {
+        //padding: 140px;
+    }
 }
+
+@include media-breakpoint-up(sm) {
+    .masthead {
+        padding: 40px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .masthead {
+        padding: 90px;
+        h1 {
+            font-size: 4rem;
+            margin: 1.6rem 0;
+        }
+
+        p {
+            font-size: 1.6rem;
+            margin: 1.6rem 0;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .masthead {
+        padding: 140px;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .masthead {
+        padding: 140px;
+        .box {
+            margin: 0 100px;
+        }
+        h1 {
+            font-size: 4.8rem;
+            margin: 0 0 3rem 0;
+        }
+    }
+}
+
+// @include media-breakpoint-up(xs) { ... }
+// @include media-breakpoint-up(sm) { ... }
+// @include media-breakpoint-up(md) { ... }
+// @include media-breakpoint-up(lg) { ... }
+// @include media-breakpoint-up(xl) { ... }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer.footer {
-    padding: 50px;
+    padding: 90px;
     margin-top: 50px;
     text-align: center;
     background: #f6f6f6;
@@ -138,16 +275,31 @@ footer.footer {
 
 .home .container {
     h1 {
-        margin-top: 150px;
-        font-size: 5em;
+        margin-top: 4rem;
+        font-size: 6rem;
+        font-family: 'Oswald';
     }
 
     h2 {
-        color: $red;
+        //color: $red;
     }
 
     .case-study {
         margin: 60px 0;
+        background: #FFF;
+        @extend .py-5;
+        @extend .px-5;
+
+        img {
+            float: left;
+            width: 180px;
+            @extend .mt-4;
+        }
+
+        .content {
+            margin-left: 200px;
+            @extend .pl-5;
+        }
     }
 }
 
