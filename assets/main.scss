@@ -68,6 +68,23 @@ body {
 
 .page {
     background: #FFF;
+    // padding: 20px;
+}
+
+@include media-breakpoint-up(sm) {
+    .page {
+        //padding: 0;
+    }
+}
+
+.readable {
+    max-width: 610px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+p {
+    margin-bottom: 1.2em;
 }
 
 section {
@@ -104,16 +121,6 @@ blockquote {
     }
 }
 
-
-.readable {
-    max-width: 610px;
-    margin: 0 auto;
-}
-
-p {
-    margin-bottom: 1.2em;
-}
-
 .superheading {
     text-transform: uppercase;
     font-family: 'Roboto';
@@ -138,16 +145,27 @@ h3 {
 }
 
 .image-row {
-    padding: 0 7rem;
+
     @extend .mt-6;
     @extend .mb-6;
+
+    figcaption {
+        text-align: center;
+        padding-top: 2rem;
+    }
 }
 
-figcaption {
-    text-align: center;
-    padding-top: 2rem;
+@include media-breakpoint-up(md) {
+    .image-row {
+        padding: 0 4rem;
+    }
 }
 
+@include media-breakpoint-up(lg) {
+    .image-row {
+        padding: 0 7rem;
+    }
+}
 
 
 
@@ -156,7 +174,6 @@ figcaption {
 
 .masthead {
 
-    background-image: url('/assets/img/iproov/masthead.png');
     background-color: $red;
     background-size: cover;
     background-repeat: no-repeat;
@@ -283,27 +300,38 @@ footer.footer {
     h2 {
         //color: $red;
     }
+}
+
+.case-study {
+
+    margin: 60px 0;
+    background: #FFF;
+
+    @extend .py-5;
+    @extend .px-5;
+
+    img {
+        margin: 3rem 0;
+        width: 30%;
+    }
+
+}
+
+@include media-breakpoint-up(md) {
 
     .case-study {
-        margin: 60px 0;
-        background: #FFF;
-        @extend .py-5;
-        @extend .px-5;
 
         img {
             float: left;
             width: 180px;
-            @extend .mt-4;
         }
 
         .content {
             margin-left: 200px;
-            @extend .pl-5;
+            padding-left: 2rem;
         }
     }
 }
-
-
 
 .page-moved {
     margin-top: 30vh;
