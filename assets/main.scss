@@ -60,7 +60,7 @@ body {
 .header {
     font-family: 'Oswald';
     font-size: 2rem;
-    padding: 20px;
+    padding: 50px 0 20px 0;
     a {
         color: $red;
     }
@@ -126,11 +126,12 @@ blockquote {
     font-family: 'Roboto';
     color: #bcbcbb;
     font-size: 1em;
-    //margin-bottom: 1em;
+    margin-bottom: -3rem;
 }
 
 h2 {
     margin-bottom: 0.8em;
+    margin-top: 4rem;
     font-size: 2.3em;
     font-family: Oswald;
     ffont-weight: bold;
@@ -138,6 +139,9 @@ h2 {
 
 h3 {
     font-family: Oswald;
+    font-size: 1.8rem;
+    margin-bottom: 0.6em;
+    margin-top: 3rem;
 }
 
 .disclaimer {
@@ -285,7 +289,7 @@ footer.footer {
     padding: 90px;
     margin-top: 50px;
     text-align: center;
-    background: #f6f6f6;
+    //background: #f6f6f6;
 }
 
 //////////////////

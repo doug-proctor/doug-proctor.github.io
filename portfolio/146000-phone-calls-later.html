@@ -7,216 +7,211 @@ layout: piece
         <div class="box">
             <h1>146,000 phone calls later</h1>
             <p>
-                When a biomentric authentication startup has spent 6 years in R&D and is finally ready to hit the mass-market, a lot of things need to be in place.
-            </p>
-            <p>
-                I was brought in to help solve internal bottlenecks and create a scalable onboarding platform.
+                When an energy company gets 4000 customer support calls each day, costing £2.4 million each year, it's worth taking a look at how design can help inform customers and cut costs.
             </p>
         </div>
     </div>
 </div>
-
 <!-- The challenge -->
 <section>
     <div class="readable">
         <h2>The Challenge</h2>
         <p>
-            Unable to manually handle the influx of new customers, I was hired as an all-round UX, UI and engineer to come in and create an integrated and streamlined customer onboarding process.
+            E.ON is the world’s largest private investor-owned energy supply company. But having lost the edge in a world of rapid digital transformation, they needed their own substantial programme to turn things around, and to give customers the transparency and control that they now expected from their energy supplier.
         </p>
         <p>
-            We worked together to establish a clearly articulated problem statement:
+            This brief was concerned with their high call centre costs, which stood at £2.4 million each year. Our design team was briefed to redesign their online customer self-service portal with the goal of reducing call centre costs by 7%.
         </p>
         <blockquote>
-            How can we enable the company to support the sudden rapid growth in customer base?
+            How can we reduce the number of customer phone calls to the call centre by 7%?
         </blockquote>
         <p>
-            Flip it on its head, break it down:
+            There were many factors that would make this a difficult undertaking:
         </p>
         <ul>
-            <li>Who are the customers?</li>
-            <li>What are the current bottlenecks and pain points?</li>
-            <li>How can we use technology to enable effective self-service?</li>
+            <li>Heavy regulation by Ofgem</li>
+            <li>Siloed business functions within E.ON</li>
+            <li>Highly political landscape</li>
+            <li>Fragile, inflexible legacy technology infrastructure</li>
+            <li>Isolated design team (not colocated with IT)</li>
         </ul>
+        <h3>My role</h3>
+        <p>
+            I worked solely on the E.ON account at Engine, and was the UX lead on their client E.ON’s digital transformation programme. I led our UX team of 4, overseeing the design process, output, and the user testing programme.
+        </p>
+        <hr class="my-5"/>
+        <p>
+            I also created a component library-based design delivery system, bridging the gap between the designers and developers, and helped the E.ON IT leadership find a way to bring Lean UX into their Agile process.
+        </p>
     </div>
 </section>
 
 <!-- The solution: introducing the partner poral -->
 <section class="grey centered pb-4" id="the-solution">
     <p class="superheading">The solution</p>
-    <h2>Introducing the Partner Portal</h2>
-
-    <div class="image-row">
-        <div class="row">
-            <div class="col-sm">
-                {% include components/figure.html
-                    src="iproov/dashboard.png"
-                    caption="Total visibility of onboarding pipeline" %}
-            </div>
-            <div class="col-sm">
-                {% include components/figure.html
-                    src="iproov/account-setup.png"
-                    caption="Bespoke account set-up for ultimate flexibility" %}
-            </div>
-        </div>
-    </div>
-
-    <div class="image-row">
-        <div class="row">
-            <div class="col-sm">
-                {% include components/figure.html
-                    src="iproov/legal.png"
-                    caption="Streamlined handling of legal paperwork" %}
-            </div>
-            <div class="col-sm">
-                {% include components/figure.html
-                    src="iproov/pricing.png"
-                    caption="Comprehensive pricing options" %}
-            </div>
-        </div>
-    </div>
+    <h2>A redesigned self-service portal </h2>
+    <img src="/assets/img/eon/solution.png" class="img-fluid mt-5 pb-0">
 </section>
 
 <!-- How we got there -->
 <section>
     <div class="readable">
         <p class="superheading">How we got there</p>
-        <h2>Modelling client relationships</h2>
+        <h2>Commercial strategy</h2>
         <p>
-            We had to understand the customers and different types of client relationships. iProov had already formed several relationships with other organisations, and we could use these as prototypical examples of the different types of B2B and B2C relationships to design for.
+            I joined the project after a substantial phase of strategy had been completed. There were several key outputs from that phase that would feed directly into our design process. We had:
+        </p>
+        <ul>
+            <li>
+                A key messaging hierarchy, which would be woven throughout the content and design of the new site
+            </li>
+            <li>
+                LADS, a user journey framework designed to ensure the inclusion of related journeys at any relevant point of a journey
+            </li>
+        </ul>
+    </div>
+    <div class="image-row">
+        <div class="row">
+            <div class="col-sm">
+                {% include components/figure.html
+                    src="eon/messaging.png"
+                    caption="Key messaging hierarchy" %}
+            </div>
+            <div class="col-sm">
+                {% include components/figure.html
+                    src="eon/lads.png"
+                    caption="LADs mini-framework" %}
+            </div>
+        </div>
+    </div>
+    <div class="readable">
+        <h2>Customer typology</h2>
+        <p>
+            Crucially, E.ON’s customers can be grouped according to how they prefer to (or are able to) pay for their energy usage:
+        </p>
+        <ul>
+            <li>On Demand</li>
+            <li>Direct Debit (fixed)</li>
+            <li>Direct Debit (variable)</li>
+            <li>Pay-you-go</li>
+        </ul>
+        <p>
+            The differences between these customers were far-reaching, and needed to be understood on a psychological, financial, and technical systems / database level.
+        </p>
+        <h2>Personas</h2>
+        <p>
+            In addition to inheriting strategic outputs, there was also prior work by the client to create a set of personas specific to the digital transformation programme.
         </p>
         <p>
-            An examination of the general commercial structure of each of these relationships allowed me to create a set of abstracted client relationship models, which we could use almost as “commercial personas”.
+            These weren’t created in the traditional UX way by analysing usability test results, but rather from a marketing segmentation angle. Nonetheless, they provided us with a useful way to categorise our basic audience types and to refer to them often when discussing our work.
+        </p>
+        <h2>Context mapping</h2>
+        <p>
+            In order to help us understand what customers expected to see when viewing their bill, we had to build out our understanding of what their different contexts could be.
+        </p>
+        <p>
+            The first step was to examine the different customer types and get a clear picture of what actions and information each type is interested in.
+        </p>
+        <!--
+        <h2>Call centre records</h2>
+        <p>
+            todo
+        </p>
+         -->
+    </div>
+    <div class="image-row">
+        <div class="row">
+            <div class="col-sm">
+                {% include components/figure.html
+                    src="eon/logs.png"
+                    caption="Call centre logs" %}
+            </div>
+            <div class="col-sm">
+                {% include components/figure.html
+                    src="eon/type-map.png"
+                    caption="Key goals by customer type" %}
+            </div>
+        </div>
+    </div>
+    <div class="readable">
+        <h2>Test-driven design</h2>
+        <p>
+            Instead of waiting until we had a design route fully fleshed out and detailed, I encouraged the team to take a much leaner test-driven approach. Since we had weekly user testing sessions that we could rely on for validating any pieces of design that we were working on that week, we were able to test a whole lot of ideas in lower fidelity. This would be much more beneficial than testing a single, well-defined route and not being able to evaluate the results comparatively.
         </p>
     </div>
     <div class="image-row">
         <div class="row">
             <div class="col-sm">
                 {% include components/figure.html
-                    src="iproov/hierarchies.png"
-                    caption="Reseller hierarchies" %}
+                    src="eon/test-step-1.png"
+                    caption="Step 1: define the hypothesis and acceptance criteria" %}
             </div>
             <div class="col-sm">
                 {% include components/figure.html
-                    src="iproov/relationships.png"
-                    caption="Commercial relationships" %}
+                    src="eon/test-step-2.png"
+                    caption="Step 2: sketch against the test acceptance criteria" %}
+            </div>
+        </div>
+    </div>
+    <div class="image-row">
+        <div class="row">
+            <div class="col-sm">
+                {% include components/figure.html
+                    src="eon/test-step-3.png"
+                    caption="Step 3: user testing" %}
+            </div>
+            <div class="col-sm">
+                {% include components/figure.html
+                    src="eon/test-step-4.png"
+                    caption="Step 4: test result analysis" %}
             </div>
         </div>
     </div>
 
-    <div class="readable">
-        <h2>Mapping the onboarding process</h2>
-        <p>
-            We had to understand the internal bottlenecks and pain points. Through interviews with each member of the sales and business teams I was able to map out the entire onboarding process — from the legal paperwork, to deploying proof-of-concept service integrations, to billing and invoicing customers.
-        </p>
-    </div>
-    <img src="/assets/img/iproov/experience-map.png" class="img-fluid my-5">
-    <div class="readable">
-        <p>
-            The more we looked at it, the more we saw that this problem wasn’t just with onboarding. It actually extended to almost all of the primary business functions, across not just the lead lifecycle but also the entire client relationship.
-        </p>
-        <p>
-            So we created a map of these functions, and began to look at the requirements for each of them.
-        </p>
-    </div>
-    <img src="/assets/img/iproov/business-functions.png" class="img-fluid my-5">
-    <div class="readable">
-        <p>
-            Now that we had our own business requirements broken down and mapped out, we could ask the golden question: how could we create a scalable, end-to-end business support system that encompassed sales, onboarding, support, reporting, billing and invoicing?
-        </p>
-    </div>
-    <img src="/assets/img/iproov/data-flow.png" class="img-fluid my-5">
-    <div class="readable">
-        <h2 class="mt-5">Service experiments</h2>
-        <p>
-            The first step towards finding an answer was to take each component business function and find out what off-the-shelf services were already available out there. From there on we’d be able to work out how much custom application we’d nee. We undertook a market review and evaluated key products and services.
-        </p>
-        <p>
-            With a shortlist of services, we could now look creating proof-of-concept integrations to see how we could possibly tie them all together in a way that would meet our business requirements.
-        </p>
-    </div>
-    <div class="image-row">
-        <div class="row">
-            <div class="col-sm">
-                {% include components/figure.html
-                    src="iproov/freshdesk-docs.png"
-                    caption="We pored over developer documentation" %}
-            </div>
-            <div class="col-sm">
-                {% include components/figure.html
-                    src="iproov/freshdesk-code.png"
-                    caption="We wrote a lot of code" %}
-            </div>
-        </div>
-    </div>
-    <div class="readable">
-        <p>
-            After months of experimentation with different services, APIs, architectures and schemas, I was able to put together a proposal for a solution that would unify and integrate the key internal business processes.
-        </p>
-    </div>
-</section>
-<section class="pt-0">
-    <div class="readable">
-        <p class="superheading">And finally...</p>
-        <h2>Sketching out a customer self-service platform</h2>
-        <p>
-            There was, however, one last critical piece of the puzzle: how were we going to bring the customers themselves directly into these processes? We had to understand how we could create a customer-facing onboarding process that would be simple for customers but also reduce the workload on iProov.
-        </p>
-        <p>
-            This was actually the easiest part of the project, because by now we’d already done most of the heavy lifting. We had:
-        </p>
-        <ol>
-            <li>A clear set of business requirements</li>
-            <li>A clear, validated vision of a service architecture unified under the Partner Portal</li>
-        </ol>
-        <p>
-            I could get straight to work modelling customer tasks, sketching out journey maps, and finding the simplest ways to implement customer interactions.
-        </p>
-    </div>
-    <div class="image-row">
-        <div class="row">
-            <div class="col-sm">
-                {% include components/figure.html src="iproov/journeys.png" caption="User journeys" %}
-            </div>
-            <div class="col-sm">
-                {% include components/figure.html src="iproov/wireflows.png" caption="Wireflows" %}
-            </div>
-        </div>
-    </div>
-    <div class="image-row">
-        <div class="row">
-            <div class="col-sm">
-                {% include components/figure.html src="iproov/wireframe-1.png" caption="Wireframes" %}
-            </div>
-            <div class="col-sm">
-                {% include components/figure.html src="iproov/wireframe-3.png" caption="Prototypes" %}
-            </div>
-            <div class="col-sm">
-                {% include components/figure.html src="iproov/wireframe-2.png" caption="User testing" %}
-            </div>
-        </div>
-    </div>
-    <div class="readable">
-        <h2>And finaly, the UI</h2>
-        <p>Fom here on it was just a matter of developing these wireframes into fully-realised UI documents. In fact, by relying heavily on the Bootstrap CSS framework I was able to go straight from wireframes into React components. During this process I made ongoing changes to the CSS where appropriate so that the Portal began to take on its own visual identity.</p>
-    </div>
-    <div class="image-row">
-        <div class="row">
-            <div class="col-sm">
-                {% include components/figure.html src="iproov/11.png" %}
-            </div>
-            <div class="col-sm">
-                {% include components/figure.html src="iproov/12.png" %}
-            </div>
-        </div>
-    </div>
-    <!--
-    <div class="readable">
-        <h2>Overall results</h2>
-        <h3>No more lost customers</h3>
-        <p>No more missing emails, lost phone memos, forgotten NDA signatures.</p>
-        <h3>Scalable onboarding</h3>
-        <p>When we put the new system live, iProov went from onboarding 5 customers a week to 50.</p>
-    </div>
-     -->
-</section>
 
+    <div class="readable">
+        <h2>Collaboration with content and technical teams </h2>
+        <p>
+            As a Big 6 energy company, E.ON was under stricter regulation than most companies are. This would manifest itself as one of the most important constraints that our design team had to work with: content. We collaborated with E.ON’s content teams through the design process, ensuring that our designs met Ofgem regulations, as well as E.ON’s tone and content style guides.
+        </p>
+        <p>
+            It was also key to understand how our designs would be implemented into E.ON’s CMS and technology stack. Working closely with Sitecore developers and architects, we built up a common understanding and vocabulary around how our “design” components would be translated into CSS components, Angular components, and Sitecore components, each of which had different data requirements.
+        </p>
+    </div>
+    <img src="/assets/img/eon/tech-content.png" class="img-fluid my-5">
+    <div class="readable">
+        <h2>Interaction modelling</h2>
+        <p>
+            Once the journeys and screens were validated, we moved on detailing the responsive interaction modelling. This required a lot of input from the technical teams: any UI interaction scheme that we proposed needed to be feasible from a frontend, <a href="https://www.sitecore.com/en-gb">Sitecore</a> and <a href="https://www.adobe.com/uk/marketing-cloud/experience-manager.html">AEM</a> point of view.
+        </p>
+    </div>
+    <div class="image-row">
+        <div class="row">
+            <div class="col-sm">
+                {% include components/figure.html
+                    src="eon/interaction-model-1.png"
+                    caption="We experimented with different responsive layouts" %}
+            </div>
+            <div class="col-sm">
+                {% include components/figure.html
+                    src="eon/interaction-model-2.png"
+                    caption="Communicating our layouts to the tech teams" %}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- The results -->
+<section class="grey pb-5" id="the-solution">
+    <div class="readable">
+        <p class="superheading">The Results</p>
+        <h2>We smashed the targets.</h2>
+        <h3>Calls reduced by 30%</h3>
+        <p>
+            When the design went live, we  saw a 30% reduction in calls related to the View Bill journey. This was an overall reduction in calls by 9%, saving E.ON &pound;2.2 million per year.
+        </p>
+        <h3>60% increase in click-throughs</h3>
+        <p>
+            Part of our success was due to a 60% increase of click-throughs into the View Bill journey. We’d identified that part of the problem was that customers were not even viewing their bills online, and would rather phone E.ON to get the information they wanted.
+        </p>
+    </div>
+</section>
